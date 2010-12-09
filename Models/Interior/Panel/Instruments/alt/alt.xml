@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>alt.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>button</object-name>
+    <object-name>visses</object-name>
+    <object-name>Pressure</object-name>
+    <object-name>face</object-name>
+    <object-name>alt-Needle1</object-name>
+    <object-name>alt-Needle2</object-name>
+    <object-name>alt-Needle3</object-name>
+
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>Pressure</object-name>
+    <object-name>face</object-name>
+    <object-name>alt-Needle1</object-name>
+    <object-name>alt-Needle2</object-name>
+    <object-name>alt-Needle3</object-name>
+    <emission>
+      <factor-prop>systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission> 
+  </animation>    
+
+  <!-- altimeter -->
+  <animation>
+    <type>rotate</type>
+    <object-name>alt-Needle3</object-name>
+    <property>instrumentation/altimeter/indicated-altitude-ft</property>
+    <factor>0.36</factor>  
+    <center>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+   <type>rotate</type>
+   <object-name>alt-Needle2</object-name>
+   <property>instrumentation/altimeter/indicated-altitude-ft</property>
+   <factor>0.036</factor>
+   <center>
+     <x-m> 0 </x-m>
+     <y-m> 0 </y-m>
+     <z-m> 0 </z-m>
+   </center>
+   <axis>
+     <x> -1 </x>
+     <y>  0 </y>
+     <z>  0 </z>
+   </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>alt-Needle1</object-name>
+    <property>instrumentation/altimeter/indicated-altitude-ft</property>
+    <factor>0.0036</factor>
+    <center>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+    </center>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Pressure</object-name>
+    <property>instrumentation/altimeter/setting-inhg</property>
+    <interpolation>
+      <entry><ind> 28.0 </ind><dep> -200 </dep></entry>
+      <entry><ind> 30.0 </ind><dep>    0 </dep></entry>
+      <entry><ind> 31.3 </ind><dep>  130 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m> 0 </x-m>
+      <y-m> 0 </y-m>
+      <z-m> 0 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+ 
+</PropertyList>
+

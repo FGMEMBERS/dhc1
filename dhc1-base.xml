@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <sim include="Nasal/views.xml">
+
+    <aircraft-version>0.1</aircraft-version>
+    <status>Alpha</status>
+
+    <fuel-fraction>1.0</fuel-fraction>
+
+    <startup>
+      <splash-texture>Aircraft/dhc1/dhc1-splash.png</splash-texture>
+    </startup>
+
+    <sound>
+      <path archive="y">Aircraft/dhc1/Sounds/dhc1-sound.xml</path>
+    </sound>
+
+    <model>
+      <path archive="y">Aircraft/dhc1/Models/dhc1.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+    </model>
+
+    <flaps>
+      <setting>0</setting>
+      <setting>1</setting> <!-- 20 deg -->
+    </flaps>
+
+    <multiplay>
+      <chat_display>1</chat_display>
+      <generic> 
+        <int type="int">0</int>  <!-- 0 immat -->
+        <int type="int">0</int>  <!-- 1 immat -->
+        <int type="int">0</int>  <!-- 2 immat -->
+        <int type="int">0</int>  <!-- 3 immat -->
+        <int type="int">0</int>  <!-- 4 immat -->
+        <int type="int">0</int>  <!-- 5 immat -->
+        <int type="bool">0</int> <!-- 6 smoke -->
+        <int type="int">0</int>  <!-- 7 color -->
+        <float n="0" alias="/instrumentation/doors/crew/position-norm"/>
+        <float n="1" alias="/instrumentation/doors/passenger/position-norm"/>
+      </generic>
+    </multiplay>
+
+    <help>
+      <title>dhc1</title>
+      <key>
+        <name>d</name>
+        <desc>Open/Close canopy</desc>
+      </key>
+    </help>
+
+    <menubar include="Dialogs/dhc1-menu.xml"/>
+
+  </sim>
+ 
+  <input>
+    <keyboard include="Nasal/dhc1-keyboard.xml"/>
+  </input>
+ 
+  <nasal>
+    <doors>
+      <file>Aircraft/dhc1/Nasal/doors.nas</file>
+    </doors>
+    <dhc1>
+      <file>Aircraft/dhc1/Nasal/light.nas</file>
+      <file>Aircraft/dhc1/Nasal/liveries.nas</file>
+      <file>Aircraft/dhc1/Nasal/immat.nas</file>
+    </dhc1>
+  </nasal>
+   
+</PropertyList>
+
