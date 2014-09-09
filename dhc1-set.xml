@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- <PropertyList include="dhc1-jsbsim-cnf.xml"> -->
+<PropertyList include="dhc1-yasim-cnf.xml">
+
+  <sim>
+    <description>DHC 1 (YASim)</description>
+    <author>Emmanuel BARANGER (3D/FDM)</author>
+  </sim>
+
+</PropertyList>
+
